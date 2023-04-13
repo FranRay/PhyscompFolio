@@ -1,0 +1,49 @@
+@use "sass:string";
+// this is me trying to breakpoint like icen
+@mixin media ($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+      @media (min-width: $breakpoint-value){
+          @content;
+      }
+  }
+  @else {
+      @warn 'Invalid breakpoint provided';
+  }
+}
+
+// breakpoints
+$breakpoints:  (
+"xs": 25em, // 400px
+"sm": 34em, // 544px
+"md": 48em, // 768px
+"xl": 80em, // 1280px
+"xxl": 90em // 1440px
+);
+
+@import './base.scss';
+
+a,
+.green {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
+  }
+}
+
+@media (min-width: 1024px) {
+  //comment lol
+}
+
+// this is me trying to breakpoint like icen
+
+
+
+
+
