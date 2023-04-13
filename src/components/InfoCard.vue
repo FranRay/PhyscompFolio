@@ -29,7 +29,7 @@
         </div>
 
         <div class="info-desc">
-            <h1><slot name="desc-heading">Heading</slot></h1>
+            <h3><slot name="desc-heading">Heading</slot></h3>
             <p><slot name="desc-text">Description</slot></p>
             <Button class="info-button">Read more</Button>
         </div>
