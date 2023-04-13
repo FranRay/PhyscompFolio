@@ -183,10 +183,6 @@ import Button from './components/Button.vue';
   padding-block: 3em;
   width: 100%;
 
- 
-
-  
-
   .logs-scroll {
     display: flex;
     flex-direction: row;
