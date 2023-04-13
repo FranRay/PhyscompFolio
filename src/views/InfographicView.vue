@@ -10,7 +10,7 @@
             <h1>INCLUSIVE INNOVATION:</h1>
             <h2>Advancing Accessibility with Physical Computing</h2>
             <p>Hello world</p>
-            <!-- <img class = "infographic-image" src="../images/Infographic.png"> -->
+            <img class = "infographic-image" src="../images/Infographic.png">
         </section>
     </div>
 </template>
