@@ -16,7 +16,12 @@
             <br>
             <p>The infographic also highlights other cutting-edge technologies including Exoskeletons, Smart Wheelchairs (Aziz et al., 2022), Braille Displays (Rempel, 2022), and Soft Exosuits (Kim et al., 2023) that are making a significant impact in fostering accessibility for people with diverse needs.</p>
             
-            <img class = "infographic-image" src="../images/Infographic.png">
+            <div class = "media-container">
+                
+                <iframe src="https://www.youtube.com/embed/-6b7xXUcCjc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img class = "infographic-image" src="../images/Infographic.png">
+            </div>
+            
             <div class="references">
                 <h2>REFERENCE LIST</h2>
                 <p>Aziz, N., Khusaini, Nurul Syuhadah, Mohamed, Z., Hamid, A., Yusof, Y. and Aziz, M.R. (2022). Smart wheelchairs: A review on control methods. In: 2022 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET). IEEE, pp.1–6.</p>
@@ -57,7 +62,6 @@
     margin-left: auto;
     border: 4px solid var(--clr-secondary); 
 }
-
 .infographic-container {
     display: flex;
     flex-direction: column;
@@ -79,9 +83,22 @@
         margin-bottom: 1em;
     }
 
-    .infographic-image {
+    .media-container {
+        display: flex;
+        flex-direction: column;
         margin-block: 2em;
-        border: 2px solid var(--clr-secondary);
+        align-items: center;
+
+        iframe {
+            aspect-ratio: 16/9;
+            width: 80%;
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+        .infographic-image {
+            border: 2px solid var(--clr-secondary);
+            width: 80%;
+        }
     }
 
     .references {
