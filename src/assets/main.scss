@@ -1,8 +1,27 @@
+
 // imports
 @import 'variables';
 @import 'mixins';
 @import './base.scss';
+
 // global styling
+a,
+.green {
+  text-decoration: none;
+  color: var(--clr-secondary);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--clr-primary);
+    background-color: var(--clr-secondary);
+  }
+}
+
+.rlink {
+  display: flex;
+}
 
 
 
